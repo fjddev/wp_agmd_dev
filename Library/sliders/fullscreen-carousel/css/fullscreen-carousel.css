@@ -1,0 +1,20 @@
+﻿.main-wrapper {
+	margin-top: -40px;
+}
+.carousel img {
+  min-width: 100%;
+  max-height:400px;
+}
+.carousel-control {
+    font-size: 100px;
+    top: 35%;
+}
+
+/* tablet portrait */
+@media screen and (min-width: 741px) and (max-width: 940px) {
+.carousel-control {
+    font-size: 100px;
+    top: 15%;
+}
+
+}

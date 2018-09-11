@@ -1,0 +1,110 @@
+﻿@media screen and (min-width: 949px) and (min-width: 767px) {
+
+.content-scroller {
+	margin-top: 20px;
+	overflow: hidden;
+}
+
+.content-section {
+	margin-bottom: 20px;
+}
+
+/* Clear floats of children */
+.content-section:before,
+.content-section:after {
+	content: " ";
+	display: table;
+}
+
+.content-section:after {
+	clear: both;
+}
+
+/* Text styling */
+.content-section h2 {
+	font-weight: 300;
+	line-height: 1;
+}
+
+.content-section p {
+	font-weight: 300;
+}
+
+/* Sides */
+.content-side {
+	width: 50%;
+	float: left;
+	margin: 0;
+	padding: 3em 4%;
+	overflow: hidden;
+	min-height: 12em;
+	-webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+	-moz-transition: -moz-transform 0.5s, opacity 0.5s;
+	transition: transform 0.5s, opacity 0.5s;
+}
+
+/* Clear floats of children */
+.content-side:before,
+.content-side:after {
+	content: " ";
+	display: table;
+}
+
+.content-side:after {
+	clear: both;
+}
+
+.content-side-right {
+	text-align: left;
+}
+
+.content-side-left {
+	text-align: left;
+}
+
+.content-side-right img {
+	float: left;
+}
+
+.content-side-left img {
+	float: right;
+}
+
+/* Initial state (hidden or anything else) */
+.content-init .content-side {
+	opacity: 0;
+}
+
+.content-init .content-side-left {
+	-webkit-transform: translateX(-80px);
+	-moz-transform: translateX(-80px);
+	transform: translateX(-80px);
+}
+
+.content-init .content-side-right {
+	-webkit-transform: translateX(80px);
+	-moz-transform: translateX(80px);
+	transform: translateX(80px);
+}
+
+/* Animated state */
+/* add you final states (transition) or your effects (animations) for each side */
+.content-section.content-animate .content-side-left,
+.content-section.content-animate .content-side-right {
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	transform: translateX(0px);
+	opacity: 1;
+}
+
+/* For example, add a delay for the right side:
+.content-section.content-animate .content-side-right {
+	-webkit-transition-delay: 0.2s;
+	-moz-transition-delay: 0.2s;
+	transition-delay: 0.2s;
+}
+*/
+
+/* Example media queries */
+
+}

@@ -1,0 +1,106 @@
+﻿/* BACKGROUND COLOR */
+#quotator-component, .container-quotator {
+}
+#quotator-component {
+	margin: -35px 0px 0px 0px;
+}
+/* FONT STYLES */
+.reference {
+	text-align: center;
+	font-size: 75%;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+}
+.cbp-qtrotator blockquote p {
+	font-size: 2em;
+	font-weight: 300;
+	margin: 0.4em 0 1em;
+}
+div.cbp-qtcontent blockquote small cite {
+	font-size: 1em;
+	font-weight: 300;
+	margin: 0.4em 0 1em;
+}
+div.cbp-qtcontent blockquote small {
+	font-size: .8em;
+	font-weight: 300;
+	margin: 0.4em 0 1em;
+	font-weight: 700;
+}
+/* FONT STYLES */
+div.cbp-qtcontent blockquote {
+	/*width:900px; */
+	max-width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+}
+div.cbp-qtcontent {
+	text-align: center;
+}
+div.cbp-qtcontent blockquote {
+	border-left: 10px double rgba(255, 255, 255, 0.2);
+	padding: 0 0 0 20px;
+}
+/* QUOTQTOR STYLES */
+.cbp-qtrotator {
+	position: relative;
+	margin: 3em auto 0em auto;
+	max-width: 100%;
+	width: 100%;
+	min-height: 0px;
+}
+.cbp-qtrotator .cbp-qtcontent {
+	position: absolute;
+	height: auto;
+	border-top: 1px solid #f4f4f4;
+	border-bottom: 1px solid #f4f4f4;
+	padding: 2em 0;
+	top: 0;
+	z-index: 0;
+	opacity: 0;
+	width: 100%;
+}
+.no-js .cbp-qtrotator .cbp-qtcontent {
+	border-bottom: none;
+}
+.cbp-qtrotator .cbp-qtcontent.cbp-qtcurrent, .no-js .cbp-qtrotator .cbp-qtcontent {
+	position: relative;
+	z-index: 100;
+	pointer-events: auto;
+	opacity: 1;
+}
+.cbp-qtrotator .cbp-qtcontent:before, .cbp-qtrotator .cbp-qtcontent:after {
+	content: " ";
+	display: table;
+}
+.cbp-qtrotator .cbp-qtcontent:after {
+	clear: both;
+}
+.cbp-qtprogress {
+	position: absolute;
+	background: rgba(255, 255, 255, 0.1);
+	height: 0%;
+	width: 100%;
+	top: 0;
+	z-index: 1000;
+}
+.cbp-qtrotator blockquote {
+	padding: 0;
+}
+/* Example for media query */
+@media screen and (max-width: 30.6em) {
+.cbp-qtrotator {
+	font-size: 70%;
+}
+.cbp-qtrotator img {
+	width: 80px;
+}
+}
+@media screen and (min-width: 0px) and (max-width: 768px) {
+.cbp-qtrotator blockquote {
+	padding-right: 20px!important;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */;
+	-moz-box-sizing: border-box; /* Firefox, other Gecko */;
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+}

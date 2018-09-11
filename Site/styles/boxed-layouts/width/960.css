@@ -1,0 +1,36 @@
+﻿@media screen and (min-width: 961px) {
+.main-wrapper {
+	max-width: 960px; /* 960 + 42 pixels -- to allow for the border images */;
+	background: #efefef url('../../../graphics/body-bg.jpg');
+	margin-left: auto;
+	margin-right: auto;
+}
+}
+@media screen and (max-width: 960px) {
+.main-wrapper {
+	width: 100%;
+	background: #efefef url('../../../graphics/body-bg.jpg');
+	margin-left: auto;
+	margin-right: auto;
+}
+html, body {
+	width: 100%;
+	overflow-x: hidden;
+}
+}
+.content-wrapper {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.da-img-cover {
+	visibility: hidden;
+	display: none;
+}
+.da-img-bg-cover {
+	visibility: hidden;
+	display: none;
+}
+.da-slider {
+	background: none;
+}

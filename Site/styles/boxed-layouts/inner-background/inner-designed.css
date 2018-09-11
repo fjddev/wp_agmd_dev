@@ -1,0 +1,14 @@
+﻿.main-wrapper {
+    background: url('../../../graphics/backgrounds/outer-bg2.jpg') repeat scroll 0 0 #EFEFEF;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.da-img-bg-cover{
+	background:none!important;
+}
+.da-slider {
+	background:none!important;
+}
+
+

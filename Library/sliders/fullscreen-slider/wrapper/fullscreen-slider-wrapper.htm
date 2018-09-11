@@ -1,0 +1,206 @@
+    <body>
+        <link rel="stylesheet" type="text/css" href="../css/fs-slider.css" />
+		<script type="text/javascript" src="../js/modernizr.custom.79639.js"></script>
+
+
+
+        <div class="fs-slider fs-wrapper"> 
+
+
+
+
+            <div id="slider" class="sl-slider-wrapper">
+
+				<div class="sl-slider">
+
+
+				<!--webbot bot="Include" U-Include="../fullscreen-slider.htm" TAG="BODY" startspan -->
+    
+    <!-- slide 1 -->
+					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+						<div class="sl-slide-inner">
+							<div class="bg-img" style="background-image:url('../images/1.jpg')"></div>
+							<div class="top-shadow"></div>
+							<div class="vertical-line"></div>
+							<h2>Fullscreen slider</h2>
+							<blockquote><p>Replace with your own images! The new Fullscreen slider will <em>auto size your replacement images</em> to fit fullscreen! More flexible than ever with the new 'Image Display' covers. Aesthetic lines, dots or stripes to raise your images to the next level of <em>Coolness</em>. Just drop your new image into your template, set the link, and assign one of 6 different image display covers 
+								(or none at all if that's the way you roll)!&nbsp; No limit to the number of slides and images! </p>
+							<cite>image display: vertical lines</cite>
+							</blockquote>
+						</div>
+					</div>
+    <!-- slide 1 -->
+
+
+    <!-- slide 2 -->
+					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1">
+						<div class="sl-slide-inner">
+							<div class="bg-img" style="background-image:url('../images/5.jpg')"></div>
+							<div class="top-shadow"></div>
+							<div class="dot-light"></div>
+							<h2>Mobile/Responsive</h2>
+							<blockquote><p>Ready for any device. Your new template will flex to fit any device with its fully responsive modern coding. Using the latest Bootstrap 3.0 with HTML5 and CSS3 and FontAwesome 4.0. </p>
+							<cite>image display: dots light</cite>
+							</blockquote>
+						</div>
+					</div>
+    <!-- slide 2 -->
+
+
+    <!-- slide 3 -->
+					<div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
+						<div class="sl-slide-inner">
+							<div class="bg-img" style="background-image:url('../images/2.jpg')"></div>
+							<div class="top-shadow"></div>
+							<div class="horizontal-line"></div>
+							<h2>Be Creative</h2>
+							<blockquote><p>With the multiple page layouts and design options available in your new template. You can choose a wide screen layout, or a compact fixed (boxed) layout. Change the background images, colors and designs as you need.</p>
+							<cite>image display: horizontal lines</cite>
+							</blockquote>
+						</div>
+					</div>
+    <!-- slide 3 -->
+    
+    
+    <!-- slide 4 -->
+					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
+						<div class="sl-slide-inner">
+							<div class="bg-img" style="background-image:url('../images/3.jpg')"></div>
+							<div class="top-shadow"></div>
+							<div class="dot-dark"></div>
+							<h2>Clean &amp; Simple</h2>
+							<blockquote><p>Or detailed and elaborate, the choice is yours with dozens of design options available to you, including multiple sliders, page backgrounds, clean or grunge edging. </p>
+							<cite>image display: dots dark</cite>
+							</blockquote>
+						</div>
+					</div>
+    <!-- slide 4 -->
+    
+    
+    <!-- slide 5 -->
+					<div class="sl-slide" data-orientation="vertical" data-slice1-rotation="-5" data-slice2-rotation="25" data-slice1-scale="2" data-slice2-scale="1">
+						<div class="sl-slide-inner">
+							<div class="bg-img" style="background-image:url('../images/4.jpg')"></div>
+							<div class="top-shadow"></div>
+							<div class="diagonal-right"></div>
+							<h2>Human Support</h2>
+							<blockquote><p>Real people helping real people. The people who built your template are the same people who answer your questions and help if needed! We're so confident that you'll be satisfied with our product and service that we offer a 30 day money back guarantee.</p>
+							<cite>image display: diagonal lines</cite>
+							</blockquote>
+						</div>
+					</div>
+    <!-- slide 5 -->
+					
+	<!--webbot bot="Include" endspan i-checksum="60765" -->
+
+				</div><!-- /sl-slider -->
+
+
+				<nav id="nav-arrows" class="nav-arrows">
+					<span class="nav-arrow-prev">Previous</span>
+					<span class="nav-arrow-next">Next</span>
+				</nav>
+
+
+				<nav id="nav-dots" class="nav-dots">
+					<span class="nav-dot-current"></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</nav>
+
+			</div><!-- /slider-wrapper -->
+
+				<div class="sl-slider shadow-top"></div>
+				<div class="sl-slider shadow-bottom"></div>
+
+
+
+        </div>
+		<script type="text/javascript" src="../js/jquery.ba-cond.min.js"></script>
+		<script type="text/javascript" src="../js/jquery.fs-slider.js"></script>
+		<script type="text/javascript">
+			jQuery(function() {
+
+				var Page = (function() {
+
+					var $navArrows = jQuery( '#nav-arrows' ),
+						$nav = jQuery( '#nav-dots > span' ),
+						slitslider = jQuery( '#slider' ).slitslider( {
+							onBeforeChange : function( slide, pos ) {
+
+								$nav.removeClass( 'nav-dot-current' );
+								$nav.eq( pos ).addClass( 'nav-dot-current' );
+
+							}
+						} ),
+
+						init = function() {
+
+							initEvents();
+
+						},
+						initEvents = function() {
+
+							// add navigation events
+							$navArrows.children( ':last' ).on( 'click', function() {
+
+								slitslider.next();
+								return false;
+
+							} );
+
+							$navArrows.children( ':first' ).on( 'click', function() {
+
+								slitslider.previous();
+								return false;
+
+							} );
+
+							$nav.each( function( i ) {
+
+								jQuery( this ).on( 'click', function( event ) {
+
+									var $dot = jQuery( this );
+
+									if( !slitslider.isActive() ) {
+
+										$nav.removeClass( 'nav-dot-current' );
+										$dot.addClass( 'nav-dot-current' );
+
+									}
+
+									slitslider.jump( i + 1 );
+									return false;
+
+								} );
+
+							} );
+
+						};
+
+						return { init : init };
+
+				})();
+
+				Page.init();
+
+				/**
+				 * Notes:
+				 *
+				 * example how to add items:
+				 */
+
+				/*
+
+				var $items  = $('<div class="sl-slide sl-slide-color-2" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1"><div class="sl-slide-inner bg-1"><div class="sl-deco" data-icon="t"></div><h2>some text</h2><blockquote><p>bla bla</p><cite>Margi Clarke</cite></blockquote></div></div>');
+
+				// call the plugin's add method
+				ss.add($items);
+
+				*/
+
+			});
+		</script>
+	</body>

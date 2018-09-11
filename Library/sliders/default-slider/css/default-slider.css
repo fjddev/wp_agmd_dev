@@ -1,0 +1,61 @@
+﻿/* General styles */
+.main-wrapper {
+	margin-top: -40px;
+}
+#image-component {
+}
+.default-slider-bg {
+	position: relative;
+	background: url('../../../../Site/graphics/office-bg.jpg') center center;
+	-webkit-box-shadow: inset 0px 0px 50px 0px rgba(0, 0, 0, .5);
+	box-shadow: inset 0px 0px 50px 0px rgba(0, 0, 0, .5);
+	border-bottom: 1px #ffffff solid;
+}
+html body div.container .slidercontainer {
+	margin: 30px auto 50px;
+	width: 900px;
+	z-index: 999;
+	position: relative;
+}
+.amazingslider-1 {
+	display: block;
+	position: relative;
+	margin: 0px auto 0px;
+}
+.amazingslider-slides {
+	display: none;
+}
+.amazingslider-thumbnails {
+	display: none;
+}
+div.amazingslider-img-0 img {
+	width: 100%;
+}
+/*
+.amazingslider-slider-0 {
+	border-color: #eeeeee!important;
+	border-style: double!important;
+	border-width: 10px;
+	box-shadow: 0 0 100px ##38B8DB!important;
+	box-shadow: 0 0 100px rgba(56, 184, 215, 0.7)!important;
+}
+*/
+/* phone */
+@media screen and (min-width: 0px) and (max-width: 740px) {
+html body div.container .slidercontainer {
+	margin: 0px auto 0px;
+	max-width: 100%;
+	
+}
+.amazingslider-text-wrapper-0{
+	display:none!important;
+}
+
+}
+/* tablet portrait */
+@media screen and (min-width: 741px) and (max-width: 940px) {
+html body div.container .slidercontainer {
+	margin: 40px auto 40px;
+	max-width: 100%;
+}
+}

@@ -1,0 +1,27 @@
+﻿@media screen and (min-width: 1025px) {
+.main-wrapper {
+	border-style: solid;
+	border-width: 0px 45px;
+	-moz-border-image: url("../../../graphics/edge1.png") 0 45 repeat;
+	-webkit-border-image: url("../../../graphics/edge1.png") 0 45 repeat;
+	-o-border-image: url("../../../graphics/edge1.png") 0 45 repeat;
+	border-image: url("../../../graphics/edge1.png") 0 45 repeat;
+	-moz-background-clip: padding; /* Firefox 3.6 */;
+	-webkit-background-clip: padding;  /* Safari 4? Chrome 6? */
+  	background-clip: padding-box;      /* Firefox 4, Safari 5, Opera 10, IE 9 */
+}
+}
+@media screen and (max-width: 1024px) {
+.main-wrapper {
+	border-style: solid;
+	border-width: 0px;
+}
+}
+
+
+*, *:before, *:after {
+    -moz-box-sizing: padding-box;
+}
+*, *:before, *:after {
+    -moz-box-sizing: padding-box;
+}

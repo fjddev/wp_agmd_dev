@@ -1,0 +1,9 @@
+Hover Icons come from the tutorials ( Simple Icon Hover Effects ).
+
+Thanks and credit for the fantastic efforts in animations and design process goes to Mary Lou at
+
+http://tympanus.net/codrops/2013/05/30/simple-icon-hover-effects/
+
+We simply modified the code CSS to better suit the look and feel of the template.
+
+For the icons we are using an icon font (Eco Ico by Matthew Skiles, created with the IcoMoon app) which we add using the :before pseudo-class.

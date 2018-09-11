@@ -1,0 +1,16 @@
+﻿
+
+/* hide in IE8 */
+.hi-icon-wrap {
+	visibility:hidden;
+	display:none;
+}
+.box1 {
+    margin: 0px 5px 5px;
+    padding: 20px 5px 5px;
+}
+
+#quotator-component{
+	visibility:hidden;
+	display:none;
+}

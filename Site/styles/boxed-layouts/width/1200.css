@@ -1,0 +1,47 @@
+﻿.main-wrapper {
+	max-width: 1200px; /* 960 + 42 pixels -- to allow for the border images */;
+	margin-left: auto;
+	margin-right: auto;
+	position:relative;
+	padding-top:20px;
+}
+.main-content {
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+@media screen and (max-width: 1024px) {
+.main-wrapper {
+	width: 100%;
+	background: #efefef;
+	margin-left: auto;
+	margin-right: auto;
+}
+html, body {
+	width: 100%;
+	overflow-x: hidden;
+}
+}
+.content-wrapper {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.main-wrapper .container {
+	padding-left:5px;
+	padding-right:5px;
+}
+.main-content {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+}
+
+@media screen and (max-width: 600px) {
+.main-content {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+}

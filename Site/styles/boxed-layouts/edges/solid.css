@@ -1,0 +1,18 @@
+@media screen and (min-width: 1025px) {
+.main-wrapper {
+ border-left:10px #2F3942 ridge;
+ border-right:10px #2F3942 groove;
+}
+}
+@media screen and (max-width: 1024px) {
+.main-wrapper {
+	border-style: solid;
+	border-width: 0px;
+}
+}
+*, *:before, *:after {
+	-moz-box-sizing: padding-box;
+}
+*, *:before, *:after {
+	-moz-box-sizing: padding-box;
+}
